@@ -36,16 +36,16 @@
             <span class="close" id="closePopup">&times;</span>
             <h2>Have Any Queries?</h2>
             <p>We'd love to assist you with your development needs! Please fill out the form below.</p>
-            <form id="queryForm">
+            <form id="queryForm" netlify>
                 <div class="form-row">
-                    <input type="text" id="name" placeholder="Your Name" required>
-                    <input type="email" id="email" placeholder="Your Email" required>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
                 </div>
                 <div class="form-row">
-                    <input type="tel" id="phone" placeholder="Your Phone" required>
-                    <input type="text" id="business" placeholder="Your Business Name" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                    <input type="text" id="business" name="business" placeholder="Your Business Name" required>
                 </div>
-                <textarea id="requirements" placeholder="Describe your requirements..." required></textarea>
+                <textarea id="requirements" name="requirements" placeholder="Describe your requirements..." required></textarea>
                 <button type="submit">Submit</button>
             </form>
         </div>
